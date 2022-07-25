@@ -19,15 +19,17 @@ struct CardView: View {
                 .cornerRadius(20)
                 .foregroundColor(color)
                 .shadow(radius: 4)
-            Text("Question")
-                .position(x: 130, y: 350)
             VStack {
+                Text("Question")
                 Text(questions)
+                    .frame(width: 590, height: 30, alignment: .center)
                     .font(.custom("Plus Jakarta Sans", size: 24))
                     .foregroundColor(.black)
-                    .bold()
+                    .lineLimit(2)
+                    
+                    
                 Image("imageSample")
-            }
+                }
             
         }
         .offset(x: offset.width * 1, y: offset.height * 0.4)
@@ -80,4 +82,3 @@ struct CardView_Previews: PreviewProvider {
         CardView(questions: "What are the types of navigation?")
     }
 }
-

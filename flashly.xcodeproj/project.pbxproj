@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD5AE218288E476900F8A394 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5AE217288E476900F8A394 /* CardView.swift */; };
+		AD017A5D288ED0A400E1FD20 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD017A59288ED0A400E1FD20 /* PlusJakartaSans-Medium.ttf */; };
+		AD017A5E288ED0A400E1FD20 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD017A5A288ED0A400E1FD20 /* PlusJakartaSans-SemiBold.ttf */; };
+		AD017A5F288ED0A400E1FD20 /* PlusJakartaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD017A5B288ED0A400E1FD20 /* PlusJakartaSans-Light.ttf */; };
+		AD017A60288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD017A5C288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf */; };
+		AD017A63288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD017A62288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf */; };
+		AD017A65288ED94F00E1FD20 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD017A64288ED94F00E1FD20 /* CardStackView.swift */; };
+		AD017A67288ED9F200E1FD20 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD017A66288ED9F200E1FD20 /* CardView.swift */; };
 		AD5AE21A288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */; };
 		AD78C07A288A5D6E00E2FB27 /* flashlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */; };
 		AD78C07C288A5D6E00E2FB27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C07B288A5D6E00E2FB27 /* ContentView.swift */; };
@@ -15,11 +21,18 @@
 		AD78C081288A5D6F00E2FB27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD78C080288A5D6F00E2FB27 /* Preview Assets.xcassets */; };
 		AD78C083288A5D6F00E2FB27 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C082288A5D6F00E2FB27 /* Persistence.swift */; };
 		AD78C086288A5D6F00E2FB27 /* flashly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD78C084288A5D6F00E2FB27 /* flashly.xcdatamodeld */; };
+		AD8A3688288EEB7E00D77AA5 /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A3687288EEB7E00D77AA5 /* homePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD5AE217288E476900F8A394 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "flashly/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		AD017A59288ED0A400E1FD20 /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
+		AD017A5A288ED0A400E1FD20 /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		AD017A5B288ED0A400E1FD20 /* PlusJakartaSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Light.ttf"; sourceTree = "<group>"; };
+		AD017A5C288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		AD017A62288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Heavy.ttf"; path = "flashly/Assets.xcassets/PlusJakartaSans-ExtraBold.dataset/PlusJakartaSans-Heavy.ttf"; sourceTree = SOURCE_ROOT; };
+		AD017A64288ED94F00E1FD20 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		AD017A66288ED9F200E1FD20 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "flashly/Font/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		AD5AE21B288E6CC300F8A394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD78C076288A5D6E00E2FB27 /* flashly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flashly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashlyApp.swift; sourceTree = "<group>"; };
@@ -28,6 +41,7 @@
 		AD78C080288A5D6F00E2FB27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD78C082288A5D6F00E2FB27 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AD78C085288A5D6F00E2FB27 /* flashly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = flashly.xcdatamodel; sourceTree = "<group>"; };
+		AD8A3687288EEB7E00D77AA5 /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD017A61288ED0AD00E1FD20 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AD017A5B288ED0A400E1FD20 /* PlusJakartaSans-Light.ttf */,
+				AD017A59288ED0A400E1FD20 /* PlusJakartaSans-Medium.ttf */,
+				AD017A5C288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf */,
+				AD017A5A288ED0A400E1FD20 /* PlusJakartaSans-SemiBold.ttf */,
+				AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */,
+				AD017A62288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		AD78C06D288A5D6E00E2FB27 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +90,13 @@
 				AD5AE21B288E6CC300F8A394 /* Info.plist */,
 				AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */,
 				AD78C07B288A5D6E00E2FB27 /* ContentView.swift */,
-				AD5AE217288E476900F8A394 /* CardView.swift */,
+				AD017A64288ED94F00E1FD20 /* CardStackView.swift */,
+				AD017A66288ED9F200E1FD20 /* CardView.swift */,
+				AD8A3687288EEB7E00D77AA5 /* homePage.swift */,
 				AD78C07D288A5D6F00E2FB27 /* Assets.xcassets */,
 				AD78C082288A5D6F00E2FB27 /* Persistence.swift */,
 				AD78C084288A5D6F00E2FB27 /* flashly.xcdatamodeld */,
-				AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */,
+				AD017A61288ED0AD00E1FD20 /* Font */,
 				AD78C07F288A5D6F00E2FB27 /* Preview Content */,
 			);
 			path = flashly;
@@ -140,8 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5AE21A288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf in Resources */,
+				AD017A60288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf in Resources */,
+				AD017A63288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf in Resources */,
+				AD017A5F288ED0A400E1FD20 /* PlusJakartaSans-Light.ttf in Resources */,
 				AD78C081288A5D6F00E2FB27 /* Preview Assets.xcassets in Resources */,
+				AD017A5E288ED0A400E1FD20 /* PlusJakartaSans-SemiBold.ttf in Resources */,
 				AD78C07E288A5D6F00E2FB27 /* Assets.xcassets in Resources */,
+				AD017A5D288ED0A400E1FD20 /* PlusJakartaSans-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +189,10 @@
 				AD78C083288A5D6F00E2FB27 /* Persistence.swift in Sources */,
 				AD78C07C288A5D6E00E2FB27 /* ContentView.swift in Sources */,
 				AD78C07A288A5D6E00E2FB27 /* flashlyApp.swift in Sources */,
+				AD017A65288ED94F00E1FD20 /* CardStackView.swift in Sources */,
+				AD017A67288ED9F200E1FD20 /* CardView.swift in Sources */,
 				AD78C086288A5D6F00E2FB27 /* flashly.xcdatamodeld in Sources */,
-				AD5AE218288E476900F8A394 /* CardView.swift in Sources */,
+				AD8A3688288EEB7E00D77AA5 /* homePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +330,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -326,7 +363,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,7 +375,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
