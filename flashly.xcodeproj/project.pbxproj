@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5AE218288E476900F8A394 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5AE217288E476900F8A394 /* CardView.swift */; };
+		AD5AE21A288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */; };
 		AD78C07A288A5D6E00E2FB27 /* flashlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */; };
 		AD78C07C288A5D6E00E2FB27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C07B288A5D6E00E2FB27 /* ContentView.swift */; };
 		AD78C07E288A5D6F00E2FB27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD78C07D288A5D6F00E2FB27 /* Assets.xcassets */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD5AE217288E476900F8A394 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "flashly/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		AD5AE21B288E6CC300F8A394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD78C076288A5D6E00E2FB27 /* flashly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flashly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashlyApp.swift; sourceTree = "<group>"; };
 		AD78C07B288A5D6E00E2FB27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,11 +60,14 @@
 		AD78C078288A5D6E00E2FB27 /* flashly */ = {
 			isa = PBXGroup;
 			children = (
+				AD5AE21B288E6CC300F8A394 /* Info.plist */,
 				AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */,
 				AD78C07B288A5D6E00E2FB27 /* ContentView.swift */,
+				AD5AE217288E476900F8A394 /* CardView.swift */,
 				AD78C07D288A5D6F00E2FB27 /* Assets.xcassets */,
 				AD78C082288A5D6F00E2FB27 /* Persistence.swift */,
 				AD78C084288A5D6F00E2FB27 /* flashly.xcdatamodeld */,
+				AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */,
 				AD78C07F288A5D6F00E2FB27 /* Preview Content */,
 			);
 			path = flashly;
@@ -131,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5AE21A288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf in Resources */,
 				AD78C081288A5D6F00E2FB27 /* Preview Assets.xcassets in Resources */,
 				AD78C07E288A5D6F00E2FB27 /* Assets.xcassets in Resources */,
 			);
@@ -147,6 +156,7 @@
 				AD78C07C288A5D6E00E2FB27 /* ContentView.swift in Sources */,
 				AD78C07A288A5D6E00E2FB27 /* flashlyApp.swift in Sources */,
 				AD78C086288A5D6F00E2FB27 /* flashly.xcdatamodeld in Sources */,
+				AD5AE218288E476900F8A394 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +288,9 @@
 				DEVELOPMENT_TEAM = T6TVT77XWR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = flashly/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +320,9 @@
 				DEVELOPMENT_TEAM = T6TVT77XWR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = flashly/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

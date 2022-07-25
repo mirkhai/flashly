@@ -3,86 +3,47 @@
 //  flashly
 //
 //  Created by Mirta Khairunnisa on 22/07/22.
-//
-
+// to github 25 jul 2922
 import SwiftUI
-import CoreData
-
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    private var questions: [String] = ["What are the types of navigation?", "Lorem Ipsum", "Dolor sit amet, consectetur adipiscing elit. ", "Testing", "AnotherTest"].reversed()
+    @State private var sliderValue: Double = 0
+        private let maxValue: Double = 10
+        
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        
+        VStack {
+            Spacer()
+            Slider(value: $sliderValue,
+                   in: 0...maxValue)
+                   .padding(30)
+            HStack{
+                Spacer()
+            Image(systemName: "x.circle.fill")
+                .resizable()
+                .frame(width: 40.0, height: 40.0)
+                .foregroundColor(Color("FlashlyRed"))
+                Spacer()
+                Spacer()
+                Spacer()
+            Image(systemName: "checkmark.circle.fill")
+                    .resizable()
+                    .frame(width: 40.0, height: 40.0)
+                    .foregroundColor(Color("FlashlyGreen"))
+                Spacer()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            ZStack {
+                ForEach(questions, id: \.self) { person in
+                    CardView(questions: person)
+
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
