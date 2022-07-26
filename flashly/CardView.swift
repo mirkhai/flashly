@@ -22,6 +22,7 @@ struct CardView: View {
             VStack {
                 Text("Question")
                 Text(questions)
+                    .fontWeight(.bold)
                     .frame(width: 590, height: 30, alignment: .center)
                     .font(.custom("Plus Jakarta Sans", size: 24))
                     .foregroundColor(.black)

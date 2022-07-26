@@ -22,6 +22,8 @@
 		AD78C083288A5D6F00E2FB27 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C082288A5D6F00E2FB27 /* Persistence.swift */; };
 		AD78C086288A5D6F00E2FB27 /* flashly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD78C084288A5D6F00E2FB27 /* flashly.xcdatamodeld */; };
 		AD8A3688288EEB7E00D77AA5 /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A3687288EEB7E00D77AA5 /* homePage.swift */; };
+		ADE9D3B5288F8C05009A8407 /* reusableBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9D3B4288F8C05009A8407 /* reusableBG.swift */; };
+		ADE9D3B7288FA106009A8407 /* createCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9D3B6288FA106009A8407 /* createCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		AD78C082288A5D6F00E2FB27 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AD78C085288A5D6F00E2FB27 /* flashly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = flashly.xcdatamodel; sourceTree = "<group>"; };
 		AD8A3687288EEB7E00D77AA5 /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
+		ADE9D3B4288F8C05009A8407 /* reusableBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reusableBG.swift; sourceTree = "<group>"; };
+		ADE9D3B6288FA106009A8407 /* createCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				AD017A64288ED94F00E1FD20 /* CardStackView.swift */,
 				AD017A66288ED9F200E1FD20 /* CardView.swift */,
 				AD8A3687288EEB7E00D77AA5 /* homePage.swift */,
+				ADE9D3B6288FA106009A8407 /* createCard.swift */,
+				ADE9D3B4288F8C05009A8407 /* reusableBG.swift */,
 				AD78C07D288A5D6F00E2FB27 /* Assets.xcassets */,
 				AD78C082288A5D6F00E2FB27 /* Persistence.swift */,
 				AD78C084288A5D6F00E2FB27 /* flashly.xcdatamodeld */,
@@ -188,11 +194,13 @@
 			files = (
 				AD78C083288A5D6F00E2FB27 /* Persistence.swift in Sources */,
 				AD78C07C288A5D6E00E2FB27 /* ContentView.swift in Sources */,
+				ADE9D3B7288FA106009A8407 /* createCard.swift in Sources */,
 				AD78C07A288A5D6E00E2FB27 /* flashlyApp.swift in Sources */,
 				AD017A65288ED94F00E1FD20 /* CardStackView.swift in Sources */,
 				AD017A67288ED9F200E1FD20 /* CardView.swift in Sources */,
 				AD78C086288A5D6F00E2FB27 /* flashly.xcdatamodeld in Sources */,
 				AD8A3688288EEB7E00D77AA5 /* homePage.swift in Sources */,
+				ADE9D3B5288F8C05009A8407 /* reusableBG.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
