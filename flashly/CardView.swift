@@ -18,7 +18,6 @@ struct CardView: View {
                 .frame(width: 704, height: 409)
                 .cornerRadius(20)
                 .foregroundColor(color)
-                .shadow(radius: 4)
             VStack {
                 Text("Question")
                 Text(questions)
