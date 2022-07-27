@@ -6,34 +6,69 @@
 //
 
 import SwiftUI
+
 struct HomePage: View {
-    
-    private var topicName: [String] = ["Information Architecture", "Usability Testing", "Gamification 101", "SwiftUI Fundamentals", "Figma Fundamental", "Human Interfaces Guidelines","Information Architecture", "Usability Testing", "Gamification 101", "SwiftUI Fundamentals", "Figma Fundamental", "Human Interfaces Guidelines" ]
-    private var column = [GridItem(), GridItem()]
+    static let gradientStart = Color(red: 247 / 255, green: 197 / 255, blue: 61 / 255)
+    static let gradientEnd = Color(red: 242.0 / 255, green: 216.0 / 255, blue: 145.0 / 255)
+    private var topicName: [String] = ["Information Architecture", "Usability Testing","Gamification 101", "SwiftUI Fundamentals", "Figma Fundamental", "Human Interfaces Guidelines","Information Architecture2", "Usability Testing2", "Gamification 1012", "SwiftUI Fundamentals2", "Figma Fundamental2", "Human Interfaces Guidelines2"]
+    private var column = [GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
-            ZStack(alignment: .top) {
-            HomeHeader(text:"Choose Your Topic")
-            VStack{
-            ScrollView(.vertical) {
-                VStack{
-                    Spacer()
-                        .frame(height:170)
-                ForEach(topicName, id: \.self) { topic in
-                LazyVGrid(columns: column, spacing: 50) {
-                    CardStackView(topicName: topic)
-                    .padding(20)}
-                .background(Color.white)
+        ZStack()
+        {Rectangle()
+                .fill(LinearGradient(
+                  gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
+                  startPoint: .init(x: 0.25, y: 0.5),
+                  endPoint: .init(x: 0.75, y: 0.5)
+                ))
+                .frame(width: .infinity, height: 315)
+                .position(x: 450, y: 315/2)
+                .ignoresSafeArea()
+                .offset(x: 0, y: 0)
+            VStack() {
+                HomeHeader(opacity: 1.0, text:"Choose Your Topic")
+                ScrollView{
+                    VStack{
+                        Spacer()
+                            .frame(width: 0, height: 48)
+                        LazyVGrid(columns: column, spacing: 5) {
+                        ForEach(topicName, id: \.self) { topic in
+                        CardStackView(topicName: topic)
+                                .padding(.all, 43)
+                        }
+                    }
+                        .padding(.horizontal, 55.0)
+                                
                 }
-                
-                
+                    
+                    .background(Color.white)
+                   
                 }
+                .shadow(color: .gray, radius: 45, x: -9, y: -5)
+                .edgesIgnoringSafeArea(.all)
+//                .offset(x: 0, y: 170)
             }
-            .padding(.top, 0.0)
-            }
+            
+        }
+        }
+                
+        }
+//                ScrollView{
+//                VStack{
+//                    Spacer()
+//                        .frame(height:170)
+//                ForEach(topicName, id: \.self) { topic in
+//                LazyVGrid(columns: column, spacing: 50) {
+//                    CardStackView(topicName: topic)
+//                    .padding(20)}
+//                .background(Color.white)                }
+//                }
+//                }
+//
+//            }
+//        }
+//        .padding(.top, 0.0)
     
-    }
-    }
 
         struct HomePage_Previews: PreviewProvider {
                     static var previews: some View {
@@ -42,43 +77,7 @@ struct HomePage: View {
     }
 }
 
-struct HomeHeader: View {
-    var text: String
-    static let gradientStart = Color(red: 247 / 255, green: 197 / 255, blue: 61 / 255)
-    static let gradientEnd = Color(red: 242.0 / 255, green: 216.0 / 255, blue: 145.0 / 255)
-            var body: some View {
-                ZStack(alignment: .top) {
-                    Rectangle()
-                            .fill(LinearGradient(
-                            gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
-                            startPoint: .init(x: 0.25, y: 0.5),
-                            endPoint: .init(x: 0.75, y: 0.5)
-                            ))
-                            .frame(width: 834, height: .infinity)
-                            .edgesIgnoringSafeArea(.all)
-                    VStack() {
-                        Spacer()
-                                .frame(height: 83)
-                    HStack(alignment: .center, spacing: 40.0) {
-                        Spacer()
-                            .frame(width: 65)
-                        Text(text)
-                            .font(.custom("Plus Jakarta Sans", size: 38))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.black)
-                            .frame(width: 650, height: 40, alignment: .leading)
-                        Button(action: {}) {
-                            GeneralButton(icon: "plus")
-                        Spacer()
-                                .frame(width: 63)
-                        }
-                    }
-                    }
-                .edgesIgnoringSafeArea(.all)
-                
-                        }
-                    }
-                }
+
             
 
 
@@ -87,4 +86,4 @@ struct HomeHeader: View {
                     
         
 
-}
+

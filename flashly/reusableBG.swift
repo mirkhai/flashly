@@ -23,7 +23,6 @@ struct reusableBG: View {
 
     var body: some View {
         ZStack{
-            
             Rectangle()
                 .fill(LinearGradient(
                   gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),

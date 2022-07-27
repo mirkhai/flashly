@@ -123,6 +123,36 @@ struct WhiteButton: View {
 
     }
 }
+struct HomeHeader: View {
+    var opacity: Double
+    var text: String
+    static let gradientStart = Color(red: 247 / 255, green: 197 / 255, blue: 61 / 255)
+    static let gradientEnd = Color(red: 242.0 / 255, green: 216.0 / 255, blue: 145.0 / 255)
+            var body: some View {
+                    VStack() {
+                        Spacer()
+                                .frame(height: 83)
+                    HStack(alignment: .center) {
+                        Spacer()
+                            .frame(width: 65)
+                        Text(text)
+                            .font(.custom("Plus Jakarta Sans", size: 38))
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.black)
+                            .frame(width: 650, height: 40, alignment: .leading)
+                        Button(action: {}) {
+                            GeneralButton(icon: "plus")
+                                .opacity(opacity)
+                        Spacer()
+                                .frame(width: 63)
+                        }
+                    }
+                    }
+                .edgesIgnoringSafeArea(.all)
+                
+                        
+                    }
+                }
 //struct FullButton: View {
 //    var text: String
 //    var icon: String = ""
