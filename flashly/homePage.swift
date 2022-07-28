@@ -21,30 +21,41 @@ struct HomePage: View {
                   startPoint: .init(x: 0.25, y: 0.5),
                   endPoint: .init(x: 0.75, y: 0.5)
                 ))
-                .frame(width: .infinity, height: 315)
-                .position(x: 450, y: 315/2)
+                .frame(width: .infinity, height: .infinity)
                 .ignoresSafeArea()
                 .offset(x: 0, y: 0)
             VStack() {
-                HomeHeader(opacity: 1.0, text:"Choose Your Topic")
-                ScrollView{
+                HomeHeader(opacity: 1.0, text:"Choose Your Topic", icon: "plus")
+                
+                    ZStack{
+                        Rectangle()
+                            .frame(width: .infinity, height: 1037)
+                            .cornerRadius(20)
+                            .foregroundColor(.white)
+                            .shadow(color: .gray, radius: 45, x: -9, y: -5)
+                            .edgesIgnoringSafeArea(.all)
+                            .offset(y:20)
+                        VStack{
+                    Spacer()
+                            .frame(height: 32)
+                    ScrollView{
                     VStack{
                         Spacer()
                             .frame(width: 0, height: 48)
                         LazyVGrid(columns: column, spacing: 5) {
                         ForEach(topicName, id: \.self) { topic in
-                        CardStackView(topicName: topic)
+                            CardStackView(topicName: topic, finishedTopicName: topic, opacityTopic: 1.0, opacityFinish: 0.0, frontColor: Color( "FlashlyYellowAccent"), stackColor: Color("AccentColor"))
                                 .padding(.all, 43)
+                        }
                         }
                     }
                         .padding(.horizontal, 55.0)
                                 
                 }
-                    
-                    .background(Color.white)
+                    }
+                }
                    
                 }
-                .shadow(color: .gray, radius: 45, x: -9, y: -5)
                 .edgesIgnoringSafeArea(.all)
 //                .offset(x: 0, y: 170)
             }
@@ -52,7 +63,7 @@ struct HomePage: View {
         }
         }
                 
-        }
+        
 //                ScrollView{
 //                VStack{
 //                    Spacer()
@@ -72,7 +83,9 @@ struct HomePage: View {
 
         struct HomePage_Previews: PreviewProvider {
                     static var previews: some View {
-                        HomePage()
+                        Group {
+                            HomePage()
+                        }
 
     }
 }

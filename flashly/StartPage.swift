@@ -24,7 +24,8 @@ struct StartPage: View {
         
         VStack{
             Spacer()
-        Text("Time to review the topic!")
+                .frame(height: 312)
+            Text("Time to review the topic!")
                 .fontWeight(.regular)
                 .frame(width: 590, height: 30, alignment: .center)
                 .font(.custom("Plus Jakarta Sans", size: 36))
@@ -35,40 +36,40 @@ struct StartPage: View {
                 .frame(width: 0, height: 151)
         Text("Information Architecture")
                 .fontWeight(.bold)
+                .frame(width: 481, height: 200, alignment: .center)
                 .font(.custom("Plus Jakarta Sans", size: 60))
                 .foregroundColor(.black)
                 .multilineTextAlignment(.center)
                 .lineLimit(2)
-                .padding(.horizontal, 70.0)
-            Spacer()
-                .frame(width: 0, height: 53)
         Text("8 Cards")
                 .fontWeight(.regular)
                 .frame(width: 590, height: 30, alignment: .center)
                 .font(.custom("Plus Jakarta Sans", size: 20))
                 .foregroundColor(.black)
                 .lineLimit(2)
-                .padding()
-        Spacer()
+            Spacer()
             ZStack(alignment: .center){
                 Rectangle()
-                    .frame(width: .infinity, height: 302, alignment: .bottom )
+                    .frame(width: .infinity, height: 302)
+                    .cornerRadius(20)
                     .foregroundColor(.white)
                     .shadow(color: .gray, radius: 45, x: -9, y: -5)
                     .edgesIgnoringSafeArea(.all)
-                    
+                    .offset(y:20)
                 YellowButton(text: "Start!")
+            
             }
             .edgesIgnoringSafeArea(.all)
         }
         
             
-    }
+        }
+        }
 }
-
 struct StartPage_Previews: PreviewProvider {
     static var previews: some View {
         StartPage()
     }
 }
-}
+
+

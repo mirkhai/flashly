@@ -13,8 +13,10 @@
 		AD017A60288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD017A5C288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf */; };
 		AD017A63288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD017A62288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf */; };
 		AD017A65288ED94F00E1FD20 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD017A64288ED94F00E1FD20 /* CardStackView.swift */; };
-		AD017A67288ED9F200E1FD20 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD017A66288ED9F200E1FD20 /* CardView.swift */; };
+		AD017A67288ED9F200E1FD20 /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD017A66288ED9F200E1FD20 /* FrontCardView.swift */; };
+		AD3767F02892541D009162C0 /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3767EF2892541D009162C0 /* BackCardView.swift */; };
 		AD5AE21A288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */; };
+		AD6B0E8D2891BA82006A148F /* RecapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B0E8C2891BA82006A148F /* RecapPage.swift */; };
 		AD78C07A288A5D6E00E2FB27 /* flashlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */; };
 		AD78C07C288A5D6E00E2FB27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78C07B288A5D6E00E2FB27 /* ContentView.swift */; };
 		AD78C07E288A5D6F00E2FB27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD78C07D288A5D6F00E2FB27 /* Assets.xcassets */; };
@@ -27,7 +29,7 @@
 		ADAE1E642890FDC300F98B47 /* FinishPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE1E632890FDC300F98B47 /* FinishPage.swift */; };
 		ADAE1E6628914EAA00F98B47 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE1E6528914EAA00F98B47 /* SplashScreen.swift */; };
 		ADE9D3B5288F8C05009A8407 /* reusableBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9D3B4288F8C05009A8407 /* reusableBG.swift */; };
-		ADE9D3B7288FA106009A8407 /* createCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9D3B6288FA106009A8407 /* createCard.swift */; };
+		ADE9D3B7288FA106009A8407 /* CreateCardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9D3B6288FA106009A8407 /* CreateCardPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +39,11 @@
 		AD017A5C288ED0A400E1FD20 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
 		AD017A62288ED91600E1FD20 /* PlusJakartaSans-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Heavy.ttf"; path = "flashly/Assets.xcassets/PlusJakartaSans-ExtraBold.dataset/PlusJakartaSans-Heavy.ttf"; sourceTree = SOURCE_ROOT; };
 		AD017A64288ED94F00E1FD20 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
-		AD017A66288ED9F200E1FD20 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AD017A66288ED9F200E1FD20 /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		AD3767EF2892541D009162C0 /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		AD5AE219288E60EF00F8A394 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlusJakartaSans-Bold.ttf"; path = "flashly/Font/PlusJakartaSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		AD5AE21B288E6CC300F8A394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AD6B0E8C2891BA82006A148F /* RecapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapPage.swift; sourceTree = "<group>"; };
 		AD78C076288A5D6E00E2FB27 /* flashly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flashly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD78C079288A5D6E00E2FB27 /* flashlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashlyApp.swift; sourceTree = "<group>"; };
 		AD78C07B288A5D6E00E2FB27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +57,7 @@
 		ADAE1E632890FDC300F98B47 /* FinishPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPage.swift; sourceTree = "<group>"; };
 		ADAE1E6528914EAA00F98B47 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		ADE9D3B4288F8C05009A8407 /* reusableBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reusableBG.swift; sourceTree = "<group>"; };
-		ADE9D3B6288FA106009A8407 /* createCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createCard.swift; sourceTree = "<group>"; };
+		ADE9D3B6288FA106009A8407 /* CreateCardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +108,11 @@
 				AD78C07B288A5D6E00E2FB27 /* ContentView.swift */,
 				AD8E89D82890320C00CA2C8A /* CommonComponents.swift */,
 				AD017A64288ED94F00E1FD20 /* CardStackView.swift */,
-				AD017A66288ED9F200E1FD20 /* CardView.swift */,
+				AD017A66288ED9F200E1FD20 /* FrontCardView.swift */,
+				AD3767EF2892541D009162C0 /* BackCardView.swift */,
 				AD8A3687288EEB7E00D77AA5 /* HomePage.swift */,
-				ADE9D3B6288FA106009A8407 /* createCard.swift */,
+				AD6B0E8C2891BA82006A148F /* RecapPage.swift */,
+				ADE9D3B6288FA106009A8407 /* CreateCardPage.swift */,
 				ADAE1E5D2890E63A00F98B47 /* StartPage.swift */,
 				ADAE1E632890FDC300F98B47 /* FinishPage.swift */,
 				ADAE1E6528914EAA00F98B47 /* SplashScreen.swift */,
@@ -208,14 +214,16 @@
 				ADAE1E642890FDC300F98B47 /* FinishPage.swift in Sources */,
 				AD78C07C288A5D6E00E2FB27 /* ContentView.swift in Sources */,
 				AD8E89D92890320C00CA2C8A /* CommonComponents.swift in Sources */,
-				ADE9D3B7288FA106009A8407 /* createCard.swift in Sources */,
+				ADE9D3B7288FA106009A8407 /* CreateCardPage.swift in Sources */,
 				AD78C07A288A5D6E00E2FB27 /* flashlyApp.swift in Sources */,
+				AD6B0E8D2891BA82006A148F /* RecapPage.swift in Sources */,
 				AD017A65288ED94F00E1FD20 /* CardStackView.swift in Sources */,
 				ADAE1E6628914EAA00F98B47 /* SplashScreen.swift in Sources */,
-				AD017A67288ED9F200E1FD20 /* CardView.swift in Sources */,
+				AD017A67288ED9F200E1FD20 /* FrontCardView.swift in Sources */,
 				AD78C086288A5D6F00E2FB27 /* flashly.xcdatamodeld in Sources */,
 				AD8A3688288EEB7E00D77AA5 /* HomePage.swift in Sources */,
 				ADAE1E5E2890E63A00F98B47 /* StartPage.swift in Sources */,
+				AD3767F02892541D009162C0 /* BackCardView.swift in Sources */,
 				ADE9D3B5288F8C05009A8407 /* reusableBG.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
