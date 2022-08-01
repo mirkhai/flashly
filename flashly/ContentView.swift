@@ -30,8 +30,8 @@ struct ContentView: View {
                             }
                         }
                     }
-    private var questions: [String] = ["What are the types of navigation?", "Lorem Ipsum", "Dolor sit amet, consectetur adipiscing elit. ", "Testing", "AnotherTest"].reversed()
-    private var answers: [String] = ["Answer1 Hellow", "Answer2", "Answer3 Dolor sit amet", "Answer4 Consectetur adipiscing elit.", "Answer5 Testing", "Answer 6 AnotherTest"].reversed()
+    private var questions: [String] = ["What are the types of navigation?", "Question 2 Here", "Question 3 here", "Question 4 here", "Question 5 Here","Question 6"].reversed()
+    private var answers: [String] = ["Hierarchical, Flat, and Content-Driven", "Answer 2 Here", "Answer 3 Here", "Answer 4 here", "Answer 5 here", "Answer 6 here"].reversed()
     private var image: [String] = ["imageSample","imageSample","imageSample","imageSample","imageSample","imageSample"]
 
     @State private var sliderValue: Double = 0
@@ -42,12 +42,15 @@ struct ContentView: View {
             Group{
                 HomeHeader(opacity: 1.0, text: "Information Architecture", icon: "rectangle.portrait.and.arrow.right.fill")
                 Spacer()
-                Spacer()
-//
+                    .frame(height: 45)
 //                .foregroundColor(.black)
 //                .lineLimit(1)
 //                .padding(.leading)
 //                .position(x: 300, y: 84)
+                Text("4/8")
+                    .font(.custom("Plus Jakarta Sans", size: 20))
+                    .foregroundColor(.black)
+                    .fontWeight(.regular)
             Slider(value: $sliderValue,
                    in: 0...maxValue)
                    .padding(30)
@@ -60,8 +63,7 @@ struct ContentView: View {
                 .frame(width: 40.0, height: 40.0)
                 .foregroundColor(Color("FlashlyRed"))
                 Spacer()
-                Spacer()
-                Spacer()
+                    .frame(width: 603)
             Image(systemName: "checkmark.circle.fill")
                     .resizable()
                     .frame(width: 40.0, height: 40.0)
@@ -80,12 +82,21 @@ struct ContentView: View {
                             flipCard ()}
                 }
                 Spacer()
+                .frame(height: 113)
+            Text("Skip Card")
+                .font(.custom("Plus Jakarta Sans", size: 18))
+                .foregroundColor(.gray)
+            Spacer()
+                .frame(height: 113)
+            Text ("Tap the card to flip or swipe to mark")
+                .fontWeight(.regular)
+                .frame(width: 654, height: 30, alignment: .center)
+                .font(.custom("Plus Jakarta Sans", size: 18))
+                .foregroundColor(.black)
+                .lineLimit(2)
+            Spacer()
+                .frame(height: 155)
             }
-            Spacer()
-            Spacer()
-            Spacer()
-        
-    
     }
 
 

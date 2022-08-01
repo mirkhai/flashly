@@ -96,6 +96,7 @@ struct FinishPage: View {
                     Spacer()
                     
                 }
+                
                 HStack{
                     Spacer()
                        Text("Correct")
@@ -124,6 +125,7 @@ struct FinishPage: View {
 //                twoButton()
                 .edgesIgnoringSafeArea(.all)
             }
+                
             
                 
         }

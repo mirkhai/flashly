@@ -26,7 +26,6 @@ struct HomePage: View {
                 .offset(x: 0, y: 0)
             VStack() {
                 HomeHeader(opacity: 1.0, text:"Choose Your Topic", icon: "plus")
-                
                     ZStack{
                         Rectangle()
                             .frame(width: .infinity, height: 1037)
